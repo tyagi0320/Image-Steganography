@@ -1,7 +1,7 @@
 
 # Image Steganography
 
-A Python-based image steganography tool that embeds secret messages within images for secure communication.
+A Python-based GUI tool using LSB steganography and Columnar Transposition Cipher to securely hide/extract secret messages within images for private communication.
 
 ## Features
 
