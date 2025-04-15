@@ -74,11 +74,11 @@ python app.py
 ```
 ## Future Enhancements
 
--Add support for more encryption algorithms (e.g., AES, RSA) to enhance message security.
--Extend functionality to handle different image types beyond PNG for broader usability.
--Integrate AI to detect whether an image has hidden data — useful for learning or forensics.
--Package the application using PyInstaller or cx_Freeze to make it installable on Windows/Linux/Mac.
--Create a web interface using Flask or Django for easier access and sharing.
+- Add support for more encryption algorithms (e.g., AES, RSA) to enhance message security.
+- Extend functionality to handle different image types beyond PNG for broader usability.
+- Integrate AI to detect whether an image has hidden data — useful for learning or forensics.
+- Package the application using PyInstaller or cx_Freeze to make it installable on Windows/Linux/Mac.
+- Create a web interface using Flask or Django for easier access and sharing.
 
 ## Contact
 
