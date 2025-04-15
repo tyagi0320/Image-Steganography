@@ -5,9 +5,25 @@ A Python-based GUI tool using LSB steganography and Columnar Transposition Ciphe
 
 ## Features
 
-- Hide text messages within images.
-- Extract hidden messages from images.
-- Simple, easy-to-use interface.
+-Message Encryption:
+Uses a Columnar Transposition Cipher to encrypt the secret message before hiding it, adding a layer of security.
+
+-LSB Image Steganography:
+Implements Least Significant Bit (LSB) encoding to embed encrypted messages within image pixels, ensuring minimal distortion.
+
+-Easy-to-Use GUI:
+Built using Tkinter, offering a user-friendly graphical interface for both embedding and extracting hidden messages.
+
+## Tech Stack
+
+-Python 3.x: 
+ Core programming language for logic and processing
+
+-Tkinter:
+ GUI toolkit for creating the application's user interface
+
+-PIL (Pillow):
+ Image processing library used for handling and manipulating image files
 
 ## Requirements
 
@@ -56,6 +72,13 @@ pip install -r requirements.txt
 ```bash
 python app.py
 ```
+## Future Enhancements
+
+-Add support for more encryption algorithms (e.g., AES, RSA) to enhance message security.
+-Extend functionality to handle different image types beyond PNG for broader usability.
+-Integrate AI to detect whether an image has hidden data — useful for learning or forensics.
+-Package the application using PyInstaller or cx_Freeze to make it installable on Windows/Linux/Mac.
+-Create a web interface using Flask or Django for easier access and sharing.
 
 ## Contact
 
