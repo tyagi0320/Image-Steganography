@@ -1,51 +1,67 @@
-# Image Steganography Project
 
-## 📌 Project Overview
-The **Image Steganography Project** is a Python-based application that allows users to hide and retrieve secret messages within images using **Least Significant Bit (LSB) encoding**. The project also integrates **encryption** for added security, ensuring that hidden messages remain confidential.
+# Image Steganography
 
-## 🚀 Features
-- **Encode Text into Images**: Hide secret messages within image files.
-- **Decode Hidden Messages**: Extract messages from steganographic images using a secret key.
-- **Secure Encryption**: Uses a **transposition cipher** for encrypting hidden messages before embedding.
-- **Graphical User Interface (GUI)**: Built using **Tkinter** for user-friendly interactions.
-- **Supports Multiple Image Formats**: Works with **PNG, JPEG, and JPG** files.
+A Python-based image steganography tool that embeds secret messages within images for secure communication.
 
-## 🏗️ Tech Stack
-### **Frontend**
-- Tkinter (GUI for encoding/decoding operations)
+## Features
 
-### **Backend**
-- Python (Core logic & encryption)
-- PIL (Image processing)
-- Tkinter FileDialog (File selection)
+- Hide text messages within images.
+- Extract hidden messages from images.
+- Simple, easy-to-use interface.
 
-### **Encryption & Decryption**
-- Custom Transposition Cipher (Encryption before embedding)
-- Least Significant Bit (LSB) steganography
+## Requirements
 
-## 🔬 How It Works
-1. **Encoding Process:**
-   - Select an image file.
-   - Enter the secret message and encryption key.
-   - Message is encrypted and embedded in the image using LSB steganography.
-   - Save the modified image.
+To run this project, you will need Python 3.x and the following libraries:
 
-2. **Decoding Process:**
-   - Select a steganographic image.
-   - Enter the correct decryption key.
-   - Extract and decrypt the hidden message.
+- `Pillow` (for image processing)
+- `cryptography` (for encryption)
+- `numpy` (for data manipulation)
 
-## 📌 Challenges & Solutions
-### **1️⃣ Ensuring Secure Data Hiding**
-- **Issue:** LSB steganography can be easily altered by image compression.
-- **Solution:** Use **lossless PNG format** to maintain data integrity.
+You can install the required dependencies by running:
 
-### **2️⃣ Preventing Unauthorized Access**
-- **Issue:** Extracted messages could be compromised without encryption.
-- **Solution:** Implemented **transposition cipher encryption** for added security.
+```bash
+pip install -r requirements.txt
+```
 
-## 📜 License
-This project is licensed under the MIT License.
+## Installation
 
----
+1. Clone the repository:
 
+    ```bash
+    git clone https://github.com/tyagi0320/Image-Steganography.git
+    cd Image-Steganography
+    ```
+
+2. Set up a virtual environment:
+
+    - On Windows:
+      ```bash
+      python -m venv myenv
+      myenv\Scripts\activate
+      ```
+    - On macOS/Linux:
+      ```bash
+      python3 -m venv myenv
+      source myenv/bin/activate
+      ```
+
+3. Install the dependencies:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+```bash
+python app.py
+```
+
+## Contact
+
+Email: tharshit03@gmail.com  
+GitHub: [@tyagi0320](https://github.com/tyagi0320)
+
+## License
+
+This project is open-source and available under the MIT License
